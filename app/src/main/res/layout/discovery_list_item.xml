@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name_titel_textview"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/device_name_textview"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/address_titel_textview"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/device_address_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_titel_textview" />
+
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/address_titel_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_titel_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/address_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/address_titel_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/address_titel_textview"
+        app:layout_constraintTop_toBottomOf="@+id/name_textView" />
+</android.support.constraint.ConstraintLayout>
